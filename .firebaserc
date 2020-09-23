@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-ng-440f9": {
+      "hosting": {
+        "soa-application": [
+          "login-ng-440f9"
+        ]
+      }
+    }
+  }
+}

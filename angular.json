@@ -92,9 +92,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/boostrap/dist/css/boostrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery/.min.js",
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/boostrap/dist/js/boostrap.js"
+            ]
           }
         },
         "lint": {
@@ -121,8 +126,13 @@
               "devServerTarget": "soa-application:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "soa-application"
 }
